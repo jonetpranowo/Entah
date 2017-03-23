@@ -8,14 +8,12 @@ I have checked your code and I when compare with the alternative code that I mad
 Here is the alternative code using "dplyr" package:
 
 Read the data
-=============
 
 ``` r
 dat <- read.csv("ArrestMini.csv")
 ```
 
 Create new variables: "DATE" and "TIME" from variables "ARRESTTIME"
-===================================================================
 
 ``` r
 dat1 <- dat %>% 
@@ -23,7 +21,6 @@ dat1 <- dat %>%
 ```
 
 Aggregate council districts that is affected by crime on the day --&gt; I save it as "Arrest\_Daily"
-====================================================================================================
 
 ``` r
 Arrest_Daily <- dat1 %>%
@@ -34,7 +31,6 @@ Arrest_Daily <- dat1 %>%
 ```
 
 View Arrest\_Daily
-==================
 
 ``` r
 Arrest_Daily

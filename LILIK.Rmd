@@ -19,20 +19,20 @@ library(tidyr)
 ```
 
 
-#Read the data
+Read the data
 ```{r}
 dat <- read.csv("ArrestMini.csv")
 ```
 
 
 
-#Create new variables: "DATE" and "TIME" from variables "ARRESTTIME"
+Create new variables: "DATE" and "TIME" from variables "ARRESTTIME"
 ```{r}
 dat1 <- dat %>% 
   separate(ARRESTTIME, c('DATE', 'TIME'), sep = 'T')
 ```
 
-#Aggregate council districts that is affected by crime on the day --> I save it as "Arrest_Daily"
+Aggregate council districts that is affected by crime on the day --> I save it as "Arrest_Daily"
 ```{r}
 Arrest_Daily <- dat1 %>%
   mutate(Date = as.Date(DATE, "%m/%d/%Y")) %>%
@@ -41,7 +41,7 @@ Arrest_Daily <- dat1 %>%
   arrange(DATE) 
 ```
 
-#View Arrest_Daily
+View Arrest_Daily
 ```{r}
 Arrest_Daily
 ```
