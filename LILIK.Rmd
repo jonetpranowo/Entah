@@ -19,28 +19,6 @@ library(tidyr)
 ```
 
 
-
-
-```{r results='asis', echo=FALSE, include=FALSE,}
-knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
-```
-#formating tables
-```{r}
-library(xtable)
-```
-#data wrangling
-```{r}
-library(dplyr)
-```
-#text processing
-```{r}
-library(stringi)
-```
-
-
-
-
-
 #Read the data
 ```{r}
 dat <- read.csv("ArrestMini.csv")
