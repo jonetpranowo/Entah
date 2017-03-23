@@ -7,27 +7,6 @@ I have checked your code and I when compare with the alternative code that I mad
 
 Here is the alternative code using "dplyr" package:
 
-formating tables
-================
-
-``` r
-library(xtable)
-```
-
-data wrangling
-==============
-
-``` r
-library(dplyr)
-```
-
-text processing
-===============
-
-``` r
-library(stringi)
-```
-
 Read the data
 =============
 
