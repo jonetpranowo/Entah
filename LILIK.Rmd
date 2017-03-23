@@ -69,3 +69,9 @@ Arrest_Daily
 
 ```
 Plot
+```{r}
+RDATE <- as.Date(Arrest_Daily$DATE)
+fix(RDATE)
+plot(RDATE, Arrest_Daily$NUM_COUNCIL, main = "Belum Ada Judul")
+```
+
